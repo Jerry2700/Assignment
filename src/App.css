@@ -1,0 +1,102 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40vh;
+    grid-row-gap: 0px;
+    background-color: #2a5e31;
+    height: 10vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .nav-span-1{
+        color: white;
+        margin-left: 3vw;
+    }
+    .nav-span-2{
+        
+            display: grid;
+            grid-template-columns: repeat(3, 0.5fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 0px;
+            width: fit-content;
+
+
+           
+            
+    }
+
+    .bar-no{
+        color: white;
+        display: flex;
+        align-items: center;
+        
+    
+    }
+    .bar-no::before{
+        content: url(/public/Group\ 8331.svg);
+        filter: brightness(0) invert(1);
+    
+    }
+    .bar-no2{
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    .bar-no2::before{
+        content: url(/public/Group\ 8331.svg);
+        filter: brightness(0) invert(1);
+    
+    }
+    .email-id{
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    .email-id::before{
+        content: url(/public/mail.svg);
+        filter: brightness(0) invert(1);
+    
+    }
+    @media  (max-width: 480px) {
+        .nav {
+         height: 15vh;
+         padding-bottom: 10px;
+
+        }
+        .bar-no {
+            display: flex;
+            justify-content: center;
+            margin-left: 10vw;
+        }
+        .bar-no2{
+            display: flex;
+            justify-content: center;
+            margin-left: 10vw;
+
+        }
+        .email-id{
+            display: flex;
+            justify-content: center;
+            margin-left: 10vw;
+
+        }
+        .nav-span-2{
+        
+           
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+           
+            
+    }
+
+           
+    }

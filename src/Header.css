@@ -1,0 +1,150 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    overflow-y: hidden;
+
+
+    }
+    .header-2 {
+        /* display: flex;
+        align-items: center; */
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+    }
+    .header-1 {
+     margin-left: 3vw;
+     display: flex;
+     align-items: center;
+        
+    }
+   
+
+    .search{
+    width: 30vw;
+    padding-right: 40px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    }
+
+    
+.search-icon {
+    position: absolute;
+    right: 36%; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login{
+    display: flex;
+    align-items: center;
+    width: fit-content;    
+    gap: 0px;
+    justify-content: space-around;
+    width: fit-content;
+}
+
+.third-div{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    overflow-y: hidden;
+    margin-left: 3vw;
+
+}
+
+
+.item{
+    list-style: none;
+    cursor: pointer;
+    
+}
+.order{
+  
+    background-color: #39b54a;
+    color: white;
+    opacity: 1;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+
+}
+
+
+
+@media  (max-width: 480px) {
+    .search {
+   width: 60%;
+
+    }
+    
+    .header-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+    .search-icon {
+        position: absolute;
+        right: 62%; 
+        top: 50%;
+      
+    }
+    .third-div {
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: auto; 
+        grid-column-gap: 0px; 
+        grid-row-gap: 10px; 
+    }
+
+    
+   
+}
+
+
+
+  
+  .dropdown-item:hover .dropdown-content {
+    display: block;
+    z-index: 6;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    min-width: 150px;
+  }
+  .option {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  .option:hover {
+    background-color: #D7F0DB; 
+    color: rgb(0, 0, 0); 
+  }
+ 
+  
+  
+
+
+
+
+
+
+
